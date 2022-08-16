@@ -19,7 +19,8 @@ public class PostsController : Controller
     [HttpGet]
     public IActionResult Index() {
       AcebookDbContext dbContext = new AcebookDbContext();
-      List<Post> posts = dbContext.Posts.ToList();
+      List<Post> posts = dbContext.Posts.AsEnumerable().Reverse().ToList();
+      // List<Post> posts = dbContext.Posts.ToList();
       ViewBag.Posts = posts;
       return View();
     }

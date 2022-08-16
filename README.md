@@ -1,7 +1,7 @@
 Acebook clone
 ===
 
-Link to the deployed application -->> [Acebook website]()
+Link to the deployed application -->> [Acebook website](https://acebook-clone.azurewebsites.net/)
 
 ## What is this project about
 
@@ -34,8 +34,6 @@ git clone https://github.com/amfibiya17/csharp-acebook.git
 ## How to run the program
 
 ```
-cd MyWebApp
-dotnet build
 ```
 Open http://localhost:5287/ in the browser
 ---
