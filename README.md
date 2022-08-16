@@ -1,3 +1,50 @@
+Acebook clone
+===
+
+Link to the deployed application -->> [Acebook website]()
+
+## What is this project about
+
+---
+
+## Examples of usage:
+
+![screen1]()  
+
+![screen2]()  
+
+![screen3]()    
+
+![screen4]()  
+
+![screen4]() 
+
+---
+
+## How to install the program
+
+- Clone this repository 
+
+```
+git clone https://github.com/amfibiya17/csharp-acebook.git
+```
+
+---
+
+## How to run the program
+
+```
+cd MyWebApp
+dotnet build
+```
+Open http://localhost:5287/ in the browser
+---
+---
+---
+---
+---
+
+
 # AceBook
 
 ## Quickstart
