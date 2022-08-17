@@ -8,9 +8,13 @@
 
 @foreach (Post post in ViewBag.Posts)
 {
-  <p>@post.User.Name</p>
-  <h3>@post.Title</h3>
-  <h4>@post.TimePosted</h4>
+  <br />
+
+  <h5>@post.User.Name @post.TimePosted</h5>
+  <h4>@post.Title</h4>
   <p>@post.Content</p>
+  <a href="/posts/comments">Add comment</a>
+
+  <br />
   <br />
 }
