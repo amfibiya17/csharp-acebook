@@ -8,7 +8,9 @@
 
 @foreach (Post post in ViewBag.Posts)
 {
+  <p>@post.User.Name</p>
   <h3>@post.Title</h3>
   <h4>@post.TimePosted</h4>
   <p>@post.Content</p>
+  <br />
 }
