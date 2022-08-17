@@ -9,5 +9,6 @@
 @foreach (Post post in ViewBag.Posts)
 {
   <h3>@post.Title</h3>
-  <p>@post.Title @post.Content</p>
+  <h4>@post.TimePosted</h4>
+  <p>@post.Content</p>
 }
