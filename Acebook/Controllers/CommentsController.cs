@@ -34,7 +34,7 @@ public class CommentsController : Controller
     comment.PostId = currentPostId;
     dbContext.Comments.Add(comment);
     dbContext.SaveChanges();
-    return new RedirectResult("/posts/comments");
+    return new RedirectResult("/posts");
   }
 
   [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
