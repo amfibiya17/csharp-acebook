@@ -3,7 +3,7 @@
 <form action="/posts" method="post">
   <input type="text" id="title" name="title"/>
   <input type="text" id="content" name="content"/>
-  <input type="submit" id='submit' value="Submit"/>
+  <input type="submit" id="submit" value="Submit"/>
 </form>
 
 @foreach (Post post in ViewBag.Posts)
@@ -13,7 +13,23 @@
   <h5>@post.User.Name @post.TimePosted</h5>
   <h4>@post.Title</h4>
   <p>@post.Content</p>
-  <a href="/posts/comments">Add comment</a>
+  
+  @foreach (Comment comment in ViewBag.Comments)
+  {
+    @if (comment.PostId == post.Id)
+    {
+      <br />
+
+      <h6>@comment.User.Name @comment.TimeCommented</h6>
+      <p>@comment.CommentContent</p>
+    }
+  }
+
+  <form action="/posts/comments" method="post">
+    <input type="text" id="content" name="commentContent"/>
+    <input type="submit" id="submit" value="Comment"/>
+    <input type="hidden" id="postId" name="postId" value="@post.Id"/>
+  </form>
 
   <br />
   <br />

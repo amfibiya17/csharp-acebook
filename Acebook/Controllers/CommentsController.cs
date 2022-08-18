@@ -19,9 +19,6 @@ public class CommentsController : Controller
   [HttpGet]
   public IActionResult Index()
   {
-    AcebookDbContext dbContext = new AcebookDbContext();
-    List<Comment> comments = dbContext.Comments.ToList();
-    ViewBag.Comments = comments;
     return View();
   }
 
@@ -30,8 +27,8 @@ public class CommentsController : Controller
   public RedirectResult Create(Comment comment)
   {
     AcebookDbContext dbContext = new AcebookDbContext();
-    int currentPostId = HttpContext.Session.GetInt32("post_id").Value;
-    comment.PostId = currentPostId;
+    int currentUserId = HttpContext.Session.GetInt32("user_id").Value;
+    comment.UserId = currentUserId;
     dbContext.Comments.Add(comment);
     dbContext.SaveChanges();
     return new RedirectResult("/posts");

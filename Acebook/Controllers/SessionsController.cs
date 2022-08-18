@@ -48,10 +48,6 @@ public class SessionsController : Controller
   [HttpGet]
   public ActionResult SignOut()
   {
-    // FormsAuthentication.SignOut();
-    // Session.Clear();
-    // Session.RemoveAll();
-    // Session.Abandon();
     Console.WriteLine("Logging out...");
     HttpContext.Session.Clear();
     return new RedirectResult("/");
