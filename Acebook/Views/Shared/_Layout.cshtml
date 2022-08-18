@@ -20,17 +20,35 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/signup" id="signup">Sign up</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/signin" id="signin">Sign in</a>
-                        </li>
-                    </ul>
-                </div>
+                @if (ViewBag.IsSignedIn == null || !ViewBag.IsSignedIn)
+                {
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/signup" id="signup">Sign up</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/signin" id="signin">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                } else
+                {
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/" id="signup">Profile</a>
+                            </li>
+                            
+                            <form action="/signout" method="post">
+                                <li class="nav-item">
+                                    <a type="submit" id='submit' class="nav-link text-dark" href="/signout" id="signout">Sign out</a>
+                                </li>
+                            </form>
+                        </ul>
+                    </div>
+                }
 
             </div>
         </nav>
