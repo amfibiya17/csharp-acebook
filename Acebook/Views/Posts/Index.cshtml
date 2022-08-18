@@ -1,8 +1,8 @@
 <h1>Posts</h1>
 
 <form action="/posts" method="post">
-  <input type="text" id="title" name="title"/>
-  <input type="text" id="content" name="content"/>
+  <input type="text" id="title" name="title" placeholder="I am a title" required/>
+  <input type="text" id="content" name="content" placeholder="I am a post" required/>
   <input type="submit" id="submit" value="Submit"/>
 </form>
 
@@ -26,8 +26,8 @@
   }
 
   <form action="/posts/comments" method="post">
-    <input type="text" id="content" name="commentContent"/>
-    <input type="submit" id="submit" value="Comment"/>
+    <input type="text" id="content" name="commentContent" placeholder="I am a comment" required/>
+    <input type="submit" id="submit" value="Submit"/>
     <input type="hidden" id="postId" name="postId" value="@post.Id"/>
   </form>
 
