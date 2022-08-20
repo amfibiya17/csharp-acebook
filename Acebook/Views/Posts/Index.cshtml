@@ -13,16 +13,19 @@
   <h5>@post.User.Name @post.TimePosted</h5>
   <h4>@post.Title</h4>
   <p>@post.Content</p>
-  
-  @foreach (Comment comment in ViewBag.Comments)
-  {
-    @if (comment.PostId == post.Id)
-    {
-      <br />
 
-      <h6>@comment.User.Name @comment.TimeCommented</h6>
-      <p>@comment.CommentContent</p>
+  @if (post.Comments != null)
+  {
+    <h5>Comments:</h5>
+    @foreach (Comment comment in post.Comments)
+    {
+      <div  class="comment">
+        <h6>@comment.User.Name @comment.TimeCommented</h6>
+        <p>@comment.CommentContent</p>
+      </div>
     }
+  } else {
+    <h5>No comments yet!</h5>
   }
 
   <form action="/posts/comments" method="post">

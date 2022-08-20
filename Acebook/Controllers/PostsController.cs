@@ -21,9 +21,8 @@ public class PostsController : Controller
   {
     AcebookDbContext dbContext = new AcebookDbContext();
     List<Post> posts = dbContext.Posts.AsEnumerable().Reverse().ToList();
+    dbContext.Comments.ToList();
     ViewBag.Posts = posts;
-    List<Comment> comments = dbContext.Comments.ToList();
-    ViewBag.Comments = comments;
     return View();
   }
 
