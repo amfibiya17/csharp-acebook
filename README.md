@@ -62,7 +62,7 @@ https://trello.com/b/NGuknyDE/acebook-c
 ---
 
 
-## How to install the program
+## How to install the Program
 
 - Clone this repository 
 
