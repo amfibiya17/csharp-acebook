@@ -6,44 +6,49 @@ Link to the deployed application -->> [Acebook website](https://acebook-clone.az
 ---
 
 
-## What is this project about
-- This program posts a post to an Acebook
-- This program allows to see all posts in reverse chronological order
-- This program allows to comment on the post
-- This program allows to see all posts and comments with user name
-- This program allows to see the time at which it was made
-- This program allows user to sign up for Acebook
-- This program allows user to log in to Acebook
-- This program allows user to log out of Acebook
-- This program deployed to Azure
-- This program has a database PGSQL connected to Azure
+## What this project is about
+
+The program:
+
+- posts a post to Acebook
+- shows all posts in reverse chronological order
+- allows users to comment on the post
+- shows all posts and comments with the author's name
+- shows the time at which it was made
+- allows users to sign up for Acebook
+- allows users to log in to Acebook
+- allows users to log out of Acebook
+- deployed to Azure
+- has a PGSQL database connected to Azure
 
 
 ---
 
 ## Examples of usage:
 
-![screen1]()  
+![screen1](https://i.postimg.cc/hP83Gbbq/Screenshot-2022-08-20-at-13-38-47.png)   
 
-![screen2]()  
+![screen2](https://i.postimg.cc/htpyLD5y/Screenshot-2022-08-20-at-13-38-54.png)  
 
-![screen3]()    
+![screen3](https://i.postimg.cc/dQbz3VbG/Screenshot-2022-08-20-at-13-36-08.png)    
 
-![screen4]()  
-
-![screen4]() 
+![screen4](https://i.postimg.cc/q7DFTJch/Screenshot-2022-08-20-at-13-36-27.png)  
 
 ---
 
-## If I have more time
-This project was part of Makers Accelerator program.   
-I had 3.5 days to work through the tickets.   
-The main point of this week was to learn new framework (.Net) and language (C#) using Razor and constantly deploying to Azure.  
-If I have more time I would:
+## If I'd had more time
+
+This project was part of Makers' Accelerator program.   
+I had 3 and a half days to work through the tickets.   
+The main point of this week was to learn a new framework (.Net) and language (C#) using Razor and constantly deploying to Azure. 
+
+If I'd had more time I would:
+
+- Find out why nav bar doesn't change behavior dynamically as expected
 - Implement likes for posts and comments
 - Create functionality so that user can add photo to a post or a comment
-- Implement profile page wit user details
-- Implement "friends" - so users can befriend other users
+- Implement profile page with user details
+- Implement "friends" - so users can "friend" other users
 - Style the pages
 
 ---

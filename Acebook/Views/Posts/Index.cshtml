@@ -6,16 +6,21 @@
   <input type="submit" id="submit" value="Submit"/>
 </form>
 
+<br />
+
 @foreach (Post post in ViewBag.Posts)
 {
+  <div style="background-color:powderblue;">
   <br />
-
   <h5>@post.User.Name @post.TimePosted</h5>
-  <h4>@post.Title</h4>
+  <h5>@post.Title</h5>
   <p>@post.Content</p>
+  <br />
+  </div>
 
   @if (post.Comments != null)
   {
+    <div style="background-color:MistyRose ;">
     <h5>Comments:</h5>
     @foreach (Comment comment in post.Comments)
     {
@@ -24,6 +29,7 @@
         <p>@comment.CommentContent</p>
       </div>
     }
+    </div>
   } else {
     <h5>No comments yet!</h5>
   }
