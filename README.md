@@ -1,9 +1,11 @@
 Acebook clone
 ===
 
+[![build](https://github.com/amfibiya17/csharp-acebook/actions/workflows/main_acebook-clone.yml/badge.svg)](https://github.com/amfibiya17/csharp-acebook/actions/workflows/main_acebook-clone.yml)
+
 Link to the deployed application -->> [Acebook website](https://acebook-clone.azurewebsites.net/)
 
----
+--- 
 
 
 ## What this project is about
